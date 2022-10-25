@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import '//use.fontawesome.com/releases/v5.7.2/css/all.css';
+@import './price';
+@import './meli-button';
+@import './colors';
+@import './navbar';
+@import './item';
+@import './item-card';
+@import './breadcrumb';
+@import './no-results';
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: proxima-nova, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

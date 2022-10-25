@@ -1,0 +1,38 @@
+.ItemCard {
+  display: flex;
+  height: 20em;
+  border-bottom: thin solid $itemCardBorder;
+  padding: 1em;
+  background-color: white;
+  &:hover{
+    cursor: pointer;
+    background-color: $itemCardHover;
+  }
+  &__thumb {
+    position: relative;
+    width: 18em;
+  }
+  &__info {
+    padding: 1em 0.5em;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    &__shipping {
+      width: 0.6em;
+      height: 0.6em;
+      position: relative;
+      display: inline-flex;
+      margin-left: 1em;
+    }
+    span {
+      font-size: 1.25em;
+      margin-bottom: 0.5em;
+    }
+  }
+  &__location {
+    padding: 2em;
+    flex: 1;
+    color: $descriptionGray;
+  }
+}

@@ -1,0 +1,44 @@
+.Navbar {
+  background-color: $meliYellow;
+  &__logo {
+    height: 2.5em;
+    width: 4em;
+    margin-right: 1em;
+    cursor: pointer;
+  }
+
+  form {
+    height: 2.5em;
+    width: 100%;
+    input {
+      box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+      border-radius: 0.15em;
+      border: none;
+      height: 100%;
+      width: 100%;
+      padding: 0.5em 0.5em;
+      &::-webkit-input-placeholder {
+        color: $iconGray;
+      }
+    }
+
+    button {
+      position: absolute;
+      right: 0;
+      height: 100%;
+      width: 2.5em;
+      border: none;
+      background-color: $meliGray;
+      color: $iconGray;
+      &:hover {
+        background-color: $meliGrayHover;
+      }
+
+      div {
+        position: relative;
+        height: 1.25em;
+        width: 100%;
+      }
+    }
+  }
+}
